@@ -1,4 +1,4 @@
-package net.batterbub.golemsmod;
+package net.batterbub.batterbubsgolems;
 
 import java.util.List;
 
