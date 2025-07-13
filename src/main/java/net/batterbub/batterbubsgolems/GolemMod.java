@@ -1,7 +1,10 @@
 package net.batterbub.batterbubsgolems;
 
+import net.batterbub.batterbubsgolems.block.ModBlocks;
+import net.batterbub.batterbubsgolems.item.ModCreativeModeTabs;
 import net.batterbub.batterbubsgolems.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Block;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,7 +38,10 @@ public class GolemMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,9 +57,7 @@ public class GolemMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SPARK);
-        }
+        // Add items to creative tab
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

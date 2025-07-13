@@ -1,3 +1,9 @@
 {
-  "item.batterbubsgolems.spark": "Spark of Creation"
+  "item.batterbubsgolems.spark": "Spark of Creation",
+
+  "block.batterbubsgolems.spark_ore": "Ore of Creation",
+  "block.batterbubsgolems.golem_spawner": "Golem Spawner",
+
+  "creativetab.golemmod.golem_items": "Batterbub's Golems Items",
+  "creativetab.golemmod.golem_blocks": "Batterbub's Golems Blocks"
 }

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "batterbubsgolems:block/golem_spawner"
+    }
+  }
+}
